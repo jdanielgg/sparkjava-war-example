@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                 ls
-                echo "Hola mundo feliz"
+                echo "A ver si ahora si se ve el cambio"
                 echo $prueba
                 pwd
                 ls -lrt
