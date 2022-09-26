@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'daniel_nodo'}
+    agent {label 'ubuntu'}
     stages {
         stage('download') {
             steps {
@@ -29,7 +29,7 @@ pipeline {
         stage('deployar') {
             steps {
                 sh '''
-                docker cp ./target/sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
+                docker cp ./target/sparkjava-hello-world-1.0.war jose://usr/local/tomcat/webapps
                 '''
             }
         }
